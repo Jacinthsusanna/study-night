@@ -4,6 +4,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 0;
   height: 100vh;
   overflow: hidden;
   text-align: center;
@@ -48,6 +51,12 @@
 
 /* Media Query for Mobile Devices (480px and below) */
 @media (max-width: 480px) {
+  .homeContainer {
+    height: auto;
+    min-height: 60vh;
+    overflow: visible;
+  }
+
   .homeContainer h1 {
     font-size: 2rem;
   }

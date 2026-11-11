@@ -1,25 +1,39 @@
 /* General Styling */
 
+* {
+  box-sizing: border-box;
+}
 
 li {
   list-style: none;
 }
 
-
 body {
+  min-height: 100vh;
+  margin: 0;
   display: flex;
   flex-direction: row;
-  font-family: 'Inter', sans-serif;
-
+  font-family: "Inter", sans-serif;
 }
 
 main {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   padding: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 .notVisible {
@@ -33,11 +47,5 @@ button {
   text-transform: uppercase;
   padding: 10px;
   font-weight: bold;
-  border-radius: .5rem;
-}
-
-@media (max-width: 768px) {
-  body {
-    flex-direction: row;
-  }
+  border-radius: 0.5rem;
 }

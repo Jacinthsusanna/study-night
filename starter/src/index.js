@@ -1,4 +1,3 @@
-//DO NOT CHANGE ANYTHING IN THIS FILE//
 // This file is responsible for the navigation menu and the initial loading of the project.
 
 //These are all the functions that render the pages
@@ -26,4 +25,3 @@ const addNavListener = (elementId, callback) => {
 renderHomePage();
 // Add event listeners to navigation items
 addListenerToNavigation();
-

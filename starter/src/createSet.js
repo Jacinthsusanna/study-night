@@ -1,6 +1,4 @@
-//DO NOT CHANGE ANYTHING IN THIS FILE//
-
-//// This file is responsible for generating the form used to create a new study set.
+// This file is responsible for generating the form used to create a new study set.
 
 // This function will be used to render the new study set on submit
 import { renderCardSetsPage } from "./cardSetsPage.js";

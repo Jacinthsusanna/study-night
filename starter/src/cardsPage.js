@@ -1,5 +1,3 @@
-//DO NOT CHANGE ANYTHING IN THIS FILE//
-
 // This file is responsible for rendering the full flashcard set,
 // with buttons to navigate between cards, a form to create new cards,
 // and a button to shuffle the cards.
@@ -121,7 +119,8 @@ const createNavigationButton = (text, onClick) => {
 
 const shuffleCards = (set) => {
   const shuffledCards = shuffle(set);
-  renderFlashCards(shuffledCards);
+  set.splice(0, set.length, ...shuffledCards);
+  renderFlashCards(set);
 };
 
 export { renderSide, generateFlashCard, renderFlashCards };

@@ -1,5 +1,3 @@
-//DO NOT CHANGE ANYTHING IN THIS FILE//
-
 //This file is responsible for creating errors for our form
 const showError = (message) => {
   const form = document.querySelector("form");

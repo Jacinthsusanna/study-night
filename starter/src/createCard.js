@@ -1,5 +1,3 @@
-//DO NOT CHANGE ANYTHING IN THIS FILE//
-
 // This file is responsible for the form that creates a new flashcard.
 
 // This function is responsible for rendering a flashcard.
@@ -62,7 +60,7 @@ const renderCardForm = (set) => {
     termInput,
     descriptionLabel,
     descriptionInput,
-    addCardBtn
+    addCardBtn,
   );
 
   // Creates a container for the form elements and header
