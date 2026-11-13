@@ -1,0 +1,2 @@
+header{cursor:pointer;flex:0 0 160px}header h1,nav li{text-transform:uppercase}nav ul{margin:0;padding:0}nav li{border-bottom:2px solid #d3d3d3;margin:10% 5%}nav li button{width:100%;color:inherit;font:inherit;text-align:left;background:0 0;border-radius:0;padding:0}nav li:hover{border-bottom-color:#45e9f5}@media (width<=600px){header{flex:none;width:100%;padding:0 1rem}header h1{margin:.5rem 0}nav ul{flex-wrap:wrap;gap:.25rem;display:flex}nav li{margin:0}nav li button{width:auto;padding:.5rem}}
+/*# sourceMappingURL=starter.8481d3ef.css.map */

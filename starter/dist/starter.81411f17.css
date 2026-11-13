@@ -1,0 +1,2 @@
+*{box-sizing:border-box}li{list-style:none}body{flex-direction:row;min-height:100vh;margin:0;font-family:Inter,sans-serif;display:flex}main{flex:1;justify-content:center;align-items:center;min-width:0;padding:5%;display:flex}@media (width<=600px){body{flex-direction:column}main{width:100%;padding:1rem}}.notVisible{display:none}button{color:#fff;text-transform:uppercase;background-color:#45e9f5;border:none;border-radius:.5rem;padding:10px;font-weight:700}
+/*# sourceMappingURL=starter.81411f17.css.map */

@@ -26,12 +26,12 @@ const renderCardForm = (set) => {
   // Creates a label for the Term input
   const termLabel = createLabel("Term", "termInput");
   // Creates input for the term
-  const termInput = createInput("termInput");
+  const termInput = createInput("termInput", "card-term");
 
   // Creates label for description
   const descriptionLabel = createLabel("Description", "descriptionInput");
   // Creates input for description
-  const descriptionInput = createInput("descriptionInput");
+  const descriptionInput = createInput("descriptionInput", "card-description");
 
   //Creates submit input
   const addCardBtn = createSubmitButton("Add Card");

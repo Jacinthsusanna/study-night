@@ -11,13 +11,14 @@ import { createToggleButton } from "./utilityRenderFunctions.js";
 
 // The flash cards have two sides
 // This generates one side of a flashcard card
-const renderSide = (text, className) => {
+const renderSide = (text, className, dataCy) => {
   // Creates a container element for the card
   const div = document.createElement("div");
   // Creates the paragraph that will hold the text content
   const p = document.createElement("p");
   p.textContent = text;
   div.className = className;
+  div.setAttribute("data-cy", dataCy);
   //Appends the content to the container
   div.append(p);
   return div;
@@ -27,9 +28,13 @@ const renderSide = (text, className) => {
 // Takes a card as an argument
 const generateFlashCard = (card) => {
   // Creates the Term side
-  const termSide = renderSide(card.term, "term");
+  const termSide = renderSide(card.term, "term", "flashcard-term");
   // Creates the description side
-  const descriptionSide = renderSide(card.description, "description");
+  const descriptionSide = renderSide(
+    card.description,
+    "description",
+    "flashcard-description",
+  );
 
   // Creates an inner card that will help with the Flash Card animation
   const innerCard = document.createElement("div");
@@ -98,6 +103,7 @@ const renderFlashCards = (set, index = 0) => {
   // Creates button for shuffling the cards
   const shuffleBtn = document.createElement("button");
   shuffleBtn.textContent = "Shuffle Cards";
+  shuffleBtn.setAttribute("data-cy", "shuffle-cards");
 
   // Adds an event listener to the shuffle button.
   // On click, the flashcards will be shuffled.

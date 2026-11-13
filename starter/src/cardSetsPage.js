@@ -29,7 +29,6 @@ export const renderCardSetsPage = () => {
   const sets = createCardSets();
   // Function responsible for creating the form to create a new study set.
   const form = createSetForm(cardSets);
-  // Sets the form to be invisible
 
   //Creates a button that will toggle the forms visibility
   const toggleFormButton = createToggleButton("Add New Set", form);
@@ -54,8 +53,8 @@ const createSetPreviewCard = (set, setContainer) => {
   // Container for study set
   const setCard = document.createElement("ul");
   setCard.className = "cardSets";
-  // Dynamic attribute used to select a study set during testing.
-  setCard.setAttribute("data-cy", set.id);
+  // Attribute used to select a study set during testing.
+  setCard.setAttribute("data-cy", "study-set");
 
   // Creates the Study Sets Title element
   const liTitle = document.createElement("li");

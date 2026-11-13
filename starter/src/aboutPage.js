@@ -35,7 +35,11 @@ export const renderAboutPage = () => {
   const aboutP = createElement("p", text);
 
   // Create and set up the image
-  const aboutImage = createImage(aboutPageImage, "Child Studying");
+  const aboutImage = createImage(
+    aboutPageImage,
+    "Child Studying",
+    "about-image",
+  );
 
   // Append the text elements to the text container
   textContainer.append(heading, subHeading, aboutP);

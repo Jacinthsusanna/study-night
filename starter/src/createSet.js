@@ -24,7 +24,7 @@ const createSetForm = (setCards) => {
   //Creates the label for the title input
   const label = createLabel("Card Set Title", "titleInput");
   // Creates the input fot the title
-  const input = createInput("titleInput");
+  const input = createInput("titleInput", "set-title");
   const submitButton = createSubmitButton("Submit Set");
 
   // Adds an event listener to the form.

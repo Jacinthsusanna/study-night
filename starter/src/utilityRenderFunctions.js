@@ -8,10 +8,11 @@ const createElement = (elementType, text) => {
 };
 
 // Creates images with alt text
-const createImage = (url, alt) => {
+const createImage = (url, alt, dataCy) => {
   const img = document.createElement("img");
   img.src = url;
   img.alt = alt;
+  if (dataCy) img.setAttribute("data-cy", dataCy);
   return img;
 };
 
@@ -44,10 +45,11 @@ const createLabel = (text, htmlFor) => {
 };
 
 // Helper function to create an input element
-const createInput = (name) => {
+const createInput = (name, dataCy) => {
   const input = document.createElement("input");
   input.name = name;
   input.id = name;
+  if (dataCy) input.setAttribute("data-cy", dataCy);
   return input;
 };
 
